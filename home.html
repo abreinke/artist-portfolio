@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Home Series</title>
+  <meta type="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1>Home Series</h1>
+
+<center><p>(Click on or select any image to enlarge)</p></center>
+
+<div class="row">
+  <div class="column">
+    <img src="assets/home1.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home2.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home3.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home4.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home5.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home6.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home7.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home8.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home9.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home10.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home11.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home12.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home13.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home14.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home15.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/home16.jpg" style="width:100%" onclick="onClick(this)">
+  </div>
+</div>
+
+<div id="modal1" class="modal" onclick="this.style.display='none'">
+  <img class="modal-content" style="width:100%" id="img1">
+</div>
+
+<script>
+function onClick(element) {
+  document.getElementById("img1").src = element.src;
+  document.getElementById("modal1").style.display = "block";
+}
+</script>
+
+</body>
+</html>
