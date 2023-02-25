@@ -19,24 +19,23 @@ canvas {
 }
 
 .responsive {
-  padding: 10px;
-  margin: 10px;
+  margin-top: 15px;
+  padding: 15px;
   float: left;
-  width: 35%;
+  width: 40%;
   height: auto;
 }
 
 .project-description {
   float: left;
-  width: 45%;
-  height: auto;
-  margin: 10px;
-  padding: 5px;
+  width: 40%;
+  margin: 15px;
+  padding: 15px;
   font-style: normal;
   font-weight: normal;
-  font-family: sans-serif;
+  font-family: helvetica;
   font-size: 14px;
-  text-align: justify;
+  text-align: left;
 }
 
 
@@ -519,6 +518,16 @@ input [type=checkbox] {
   .topnav a.icon {
     float: right;
     display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-description {
+    width: 100%;
+    float: none;
+  }
+  .responsive {
+    width: 100%;
   }
 }
 
