@@ -8,6 +8,32 @@
 </head>
 <body>
 
+
+  <div class="topnav" id="mainTopnav">
+    <a href="index.html" class="active">Portfolio</a>
+    <a href="mailto:abreinke@yahoo.com">Email Me</a>
+    <div class="dropdown">
+      <button class="dropbtn">Photo Projects<i class="fa fa-caret down"></i></button>
+      <div class="dropdown-content">
+        <a href="home.html">Home</a>
+        <a href="portrait.html">Portrait</a>
+        <a href="action.html">Action</a>
+        <a href="still.html">Still</a>
+      </div>
+    </div>
+      <div class="dropdown">
+        <button class="dropbtn">Interactive Projects<i class="fa fa-caret down"></i></button>
+        <div class="dropdown-content">
+          <a href="storm-symphony.html">Storm Symphony</a>
+          <a href="night-insects.html">Night Insects</a>
+          <a href="guiding-lights.html">Guiding Lights</a>
+        </div>
+      </div>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+
+
 <h1>Home Series</h1>
 
 <center><p>(Click on or select any image to enlarge)</p></center>
@@ -71,6 +97,18 @@
 function onClick(element) {
   document.getElementById("img1").src = element.src;
   document.getElementById("modal1").style.display = "block";
+}
+</script>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mainTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 </script>
 
