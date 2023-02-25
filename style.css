@@ -30,27 +30,30 @@ canvas {
   font-family: helvetica
 }
 
-.underlined-text {
-  text-decoration: underline;
-  width: 50%;
-  height: auto;
+
+.instructions {
   float: left;
+  width: 60%;
+  height: auto;
   margin: 10px;
   padding: 10px;
+}
+
+.underlined-text {
+  text-decoration: underline;
   font-size: 15px;
   font-weight: bold;
   font-family: helvetica;
+  text-align: left;
 }
 
-ol {
-  width: 60%;
-  height: auto;
-  float: left;
+.instructions ul {
   margin: 10px;
   padding: 10px;
   font-size: 15px;
   font-weight: normal;
   font-family: helvetica;
+  text-align: left;
 }
 
 li {
