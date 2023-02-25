@@ -5,10 +5,10 @@ let windSound;
 let soundVolume;
 function preload(){
 soundFormats('mp3');
-mySound = loadSound('rain.mp3');
-thunderSound = loadSound('thunder.mp3');
-hailSound = loadSound('hail.mp3');
-windSound = loadSound('wind.mp3');
+mySound = loadSound('assets/rain.mp3');
+thunderSound = loadSound('assets/thunder.mp3');
+hailSound = loadSound('assets/hail.mp3');
+windSound = loadSound('assets/wind.mp3');
 }
 
 function setup(){
