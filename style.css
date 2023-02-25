@@ -16,7 +16,62 @@ p {
 
 canvas {
   display: block;
+  float: left;
 }
+
+.text1 {
+  width: 50%;
+  height: auto;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: helvetica
+}
+
+.underlined-text {
+  text-decoration: underline;
+  width: 50%;
+  height: auto;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: helvetica;
+}
+
+ol {
+  width: 60%;
+  height: auto;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: helvetica;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container-1 {
+  padding-left: 200px;
+  padding-right: 300px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.desc {
+  font-style: normal;
+  font-weight: bold;
+  font-family: helvetica;
+  font-size: 26px;
+  text-align: left;
+}
+
 
 .responsive {
   margin-top: 15px;
