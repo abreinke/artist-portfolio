@@ -528,6 +528,7 @@ input [type=checkbox] {
   }
   .responsive {
     width: 100%;
+    display: block;
   }
 }
 
