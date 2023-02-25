@@ -30,6 +30,34 @@ canvas {
   font-family: helvetica
 }
 
+.text2 {
+  width: 90%;
+  height: 50px;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: helvetica;
+}
+
+model-viewer {
+float: left;
+margin: 5px;
+width: 45%;
+height: 500px;
+}
+
+@media screen and (max-width: 800px){
+   model-viewer {
+    width: 100%;
+    float: none;
+  }
+  .header {
+    width: 100%;
+  }
+}
+
 
 .instructions {
   float: left;
@@ -40,6 +68,8 @@ canvas {
 }
 
 .underlined-text {
+  margin: 10px;
+  padding: 10px;
   text-decoration: underline;
   font-size: 15px;
   font-weight: bold;
