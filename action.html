@@ -1,12 +1,74 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <title>Action Photos</title>
+  <title>Action</title>
   <meta type="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+  <div class="topnav" id="mainTopnav">
+    <a href="index.html" class="active">Portfolio</a>
+    <a href="mailto:abreinke@yahoo.com">Email Me</a>
+    <div class="dropdown">
+      <button class="dropbtn">Photo Projects<i class="fa fa-caret down"></i></button>
+      <div class="dropdown-content">
+        <a href="home.html">Home</a>
+        <a href="people.html">People</a>
+        <a href="action.html">Action</a>
+        <a href="still.html">Still</a>
+      </div>
+    </div>
+      <div class="dropdown">
+        <button class="dropbtn">Interactive Projects<i class="fa fa-caret down"></i></button>
+        <div class="dropdown-content">
+          <a href="storm-symphony.html">Storm Symphony</a>
+          <a href="night-insects.html">Night Insects</a>
+          <a href="guiding-lights.html">Guiding Lights</a>
+        </div>
+      </div>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img src="assets/action-dog1.jpg" alt="dog digging on beach" style="width:100%" onclick="onClick(this)">
+        <img src="assets/action-dog2.jpg" alt="dog running on beach" style="width:100%" onclick="onClick(this)">
+      </div>
+      <div class="column">
+        <img src="assets/action-car.jpg" alt="car reflection" style="width:100%" onclick="onClick(this)">
+        <img src="assets/action-insect1.jpg" alt="wasp next to lilypad" style="width:100%" onclick="onClick(this)">
+      </div>
+      <div class="column">
+        <img src="assets/action-insect2.jpg" alt="bee on sunflower" style="width:100%" onclick="onClick(this)">
+        <img src="assets/action-insect3.jpg" alt="bee on purple flower" style="width:100%" onclick="onClick(this)">
+    </div>
+  </div>
+
+    <div id="modal1" class="modal" onclick="this.style.display='none'">
+      <img class="modal-content" style="width:100%" id="img1">
+    </div>
+
+    <script>
+    function onClick(element) {
+      document.getElementById("img1").src = element.src;
+      document.getElementById("modal1").style.display = "block";
+    }
+    </script>
+
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("mainTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
 
 </body>
 </html>

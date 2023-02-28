@@ -1,16 +1,93 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <title>Video Work</title>
+  <title>Digital</title>
   <meta type="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
+  <div class="topnav" id="mainTopnav">
+    <a href="index.html" class="active">Artist Portfolio</a>
+    <div class="dropdown">
+      <button class="dropbtn">Connect With Me<i class="fa fa-caret down"></i></button>
+      <div class="dropdown-content">
+        <a href="mailto:abreinke@yahoo.com">Email Me</a>
+        <a href="https://www.instagram.com/abtheavidartist/"><img src="assets/instagram-logo.png" alt="Instagram logo" style="width:25%"></a>
+        <a href="https://www.linkedin.com/in/alicia-breinke/"><img src="assets/linkedin-logo.png" alt="LinkedIn logo" style="width:25%"></a>
+      </div>
+    </div>
+    <a href="digital.html">Digital Projects</a>
+    <a href="fine-art.html">Fine Art Projects</a>
+      <div class="dropdown">
+      <button class="dropbtn">Photo Projects<i class="fa fa-caret down"></i></button>
+      <div class="dropdown-content">
+        <a href="home.html">Home</a>
+        <a href="people.html">People</a>
+        <a href="action.html">Action</a>
+        <a href="still.html">Still</a>
+      </div>
+    </div>
+      <div class="dropdown">
+        <button class="dropbtn">Interactive Projects<i class="fa fa-caret down"></i></button>
+        <div class="dropdown-content">
+          <a href="storm-symphony.html">Storm Symphony</a>
+          <a href="night-insects.html">Night Insects</a>
+          <a href="guiding-lights.html">Guiding Lights</a>
+        </div>
+      </div>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <h1>Digital Projects</h1>
+
+    <center><p>(Click on or select any image to enlarge)</p></center>
+
+<div class="row">
+  <div class="column">
+    <img src="assets/collage-flower.jpg" alt="flower and spiral" style="width:100%" onclick="onClick(this)">
+    <img src="assets/design-serenity.jpg" alt="Serenity type" style="width:100%" onclick="onClick(this)">
+    <img src="assets/collage-cranes2.jpg" alt="three cranes" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/collage-sunflower.jpg" alt="sunflower" style="width:100%" onclick="onClick(this)">
+    <img src="assets/design-type.jpg" alt="flyer" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/design-stairs.jpg" alt="stairway" style="width:100%" onclick="onClick(this)">
+    <img src="assets/design-window.jpg" alt="window" style="width:100%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="assets/design-shades.jpg" alt="sunglasses" style="width:100%" onclick="onClick(this)">
+    <img src="assets/collage-cranes1.jpg" alt="pink cranes" style="width:100%" onclick="onClick(this)">
+    <img src="assets/collage-bee.jpg" alt="bee" style="width:100%" onclick="onClick(this)">
+  </div>
+</div>
 
 
+<div id="modal1" class="modal" onclick="this.style.display='none'">
+  <img class="modal-content" style="width:100%" id="img1">
+</div>
 
+<script>
+function onClick(element) {
+  document.getElementById("img1").src = element.src;
+  document.getElementById("modal1").style.display = "block";
+}
+</script>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mainTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
 </body>
 </html>
